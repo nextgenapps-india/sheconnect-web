@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+/* In Tailwind v4, we use @theme to define custom variables if needed */
+@theme {
+  --color-brand-purple: #4c1d95;
+  --color-brand-rose: #f43f5e;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  /* FIX: In v4, if you use @apply, you need to ensure the 
+     utilities are available. For complex classes like 'bg-white/80',
+     ensure you are using the standard utility names.
+  */
+  .glass-nav {
+    @apply sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-purple-100;
+  }
+
+  .btn-primary {
+    @apply bg-purple-900 text-white px-8 py-3 rounded-full font-semibold 
+           transition-all duration-300 transform hover:bg-rose-600 
+           hover:scale-105 active:scale-95 shadow-md hover:shadow-lg;
+  }
+
+  .btn-secondary {
+    @apply border-2 border-purple-900 text-purple-900 px-8 py-3 rounded-full 
+           font-semibold transition-all duration-300 hover:bg-purple-900 
+           hover:text-white shadow-sm;
+  }
+}
