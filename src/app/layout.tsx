@@ -61,7 +61,7 @@ export default function RootLayout({
             </div>
             <div>
               <h4 className="font-bold text-white mb-4">Connect</h4>
-              <p className="text-sm">info@sheconnect.in</p>
+              <p className="text-sm">info@sheconnectplatform.org</p>
               <div className="mt-4 flex gap-4">
                 {/* Social icons would go here */}
               </div>
