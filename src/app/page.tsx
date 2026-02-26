@@ -30,10 +30,20 @@ export default function HomePage() {
               Bridging the gap between potential and platform.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <button className="btn-primary">Explore & Experience</button>
-              <button className="btn-secondary !border-white !text-white hover:!bg-white hover:!text-purple-950">
+              {/* Primary CTA: Goes to Membership/Join page */}
+              <Link
+                href="/membership"
+                className="btn-primary flex items-center justify-center"
+              >
+                Explore & Experience
+              </Link>
+              {/* Secondary CTA: Goes to About page to see Vision/Mission and expansion map */}
+              <Link
+                href="/about"
+                className="btn-secondary !border-white !text-white hover:!bg-white hover:!text-purple-950 flex items-center justify-center transition-all"
+              >
                 View Impact
-              </button>
+              </Link>
             </div>
           </div>
           <div className="relative h-[500px] hidden md:block">
