@@ -17,7 +17,7 @@ export async function POST(req: Request) {
 
     await transporter.sendMail({
       from: `"${name}" <${process.env.SMTP_USER}>`,
-      to: "info@sheconnect.in",
+      to: "info@sheconnectconnectplatform.org",
       subject: `New SheConnect Inquiry: ${interest}`,
       html: `
         <h3>New Contact Form Submission</h3>
