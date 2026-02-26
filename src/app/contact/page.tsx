@@ -43,7 +43,7 @@ export default function ContactPage() {
               <div className="bg-rose-100 p-3 rounded-lg text-rose-600"><Mail /></div>
               <div>
                 <h4 className="font-bold text-purple-900">Email Us</h4>
-                <p className="text-gray-600">info@sheconnect.in</p>
+                <p className="text-gray-600">info@sheconnectplatform.org</p>
               </div>
             </div>
             <div className="flex gap-6 items-start">
