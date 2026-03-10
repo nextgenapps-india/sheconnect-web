@@ -26,8 +26,8 @@ export default function Navbar() {
             height={949}
             priority
             quality={100}
-            sizes="(max-width: 768px) 144px, 176px"
-            className="h-12 md:h-14 w-auto object-contain"
+            sizes="80px"
+            className="h-20 w-auto object-contain"
           />
         </Link>
 
