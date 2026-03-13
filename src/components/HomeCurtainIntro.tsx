@@ -133,7 +133,7 @@ export default function HomeCurtainIntro() {
             SheConnect
           </h1>
           <p className="mx-auto mt-6 max-w-xl text-base leading-7 text-rose-50/90 sm:text-lg">
-            Designed and Developed by Gaurav Madaan
+            Designed and Developed by NextGenApps
           </p>
           <button
             type="button"
