@@ -6,7 +6,7 @@ import HomeCurtainIntro from "@/components/HomeCurtainIntro";
 export default function HomePage() {
   return (
     <>
-      <HomeCurtainIntro />
+      {/* <HomeCurtainIntro /> */}
       <main className="overflow-x-hidden">
         {/* HERO SECTION */}
         <section className="relative min-h-[90vh] flex items-center bg-purple-950 text-white px-6">
