@@ -4,7 +4,7 @@ import nodemailer from 'nodemailer';
 
 export async function POST(req: Request) {
   try {
-    const { name, email, message, interest } = await req.json();
+    const { name, email, phone, message, interest } = await req.json();
 
     const transporter = nodemailer.createTransport({
       host: process.env.SMTP_HOST,
@@ -23,13 +23,14 @@ export async function POST(req: Request) {
         <h3>New Contact Form Submission</h3>
         <p><strong>Name:</strong> ${name}</p>
         <p><strong>Email:</strong> ${email}</p>
+        <p><strong>Phone / WhatsApp:</strong> ${phone}</p>
         <p><strong>Interest:</strong> ${interest}</p>
         <p><strong>Message:</strong> ${message}</p>
       `,
     });
 
     return NextResponse.json({ message: "Success" }, { status: 200 });
-  } catch (error) {
+  } catch {
     return NextResponse.json({ message: "Error" }, { status: 500 });
   }
 }

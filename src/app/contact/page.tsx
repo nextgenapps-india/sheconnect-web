@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import { Mail, MapPin, Phone, Send } from "lucide-react";
+import { Mail, MapPin, Send } from "lucide-react";
 
 export default function ContactPage() {
   const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">("idle");
@@ -13,6 +13,7 @@ export default function ContactPage() {
     const data = {
       name: formData.get("name"),
       email: formData.get("email"),
+      phone: formData.get("phone"),
       interest: formData.get("interest"),
       message: formData.get("message"),
     };
@@ -35,7 +36,7 @@ export default function ContactPage() {
         <div>
           <h1 className="text-5xl font-bold text-purple-950 mb-6">Let’s Connect.</h1>
           <p className="text-lg text-gray-600 mb-10">
-            Have questions about our programs or want to collaborate? We'd love to hear from you.
+            Have questions about our programs or want to collaborate? We&apos;d love to hear from you.
           </p>
 
           <div className="space-y-8">
@@ -68,6 +69,11 @@ export default function ContactPage() {
                 <label className="text-sm font-semibold text-purple-900">Email Address</label>
                 <input name="email" type="email" required className="p-3 rounded-xl border border-purple-200 focus:ring-2 focus:ring-rose-500 outline-none" placeholder="jane@example.com" />
               </div>
+            </div>
+
+            <div className="flex flex-col gap-2">
+              <label className="text-sm font-semibold text-purple-900">Phone / WhatsApp Number</label>
+              <input name="phone" type="tel" required className="p-3 rounded-xl border border-purple-200 focus:ring-2 focus:ring-rose-500 outline-none" placeholder="+91 98765 43210" />
             </div>
 
             <div className="flex flex-col gap-2">
