@@ -122,7 +122,7 @@ export default function HomePage() {
                   <h3 className="text-2xl font-bold text-purple-900">
                     Er. Shilpa Miglani
                   </h3>
-                  <p className="text-rose-600 font-medium mb-4">Co-founder</p>
+                  <p className="text-rose-600 font-medium mb-4">Founder</p>
                   <p className="text-gray-600 italic leading-relaxed text-sm">
                     Soft Skills & Employability Coach. Dedicated to empowering
                     women through actionable skill-building.
