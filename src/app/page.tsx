@@ -101,15 +101,16 @@ export default function HomePage() {
         </section>
 
         {/* CO-FOUNDERS SECTION */}
+        {/* CO-FOUNDERS SECTION */}
         <section className="py-24 px-6 bg-purple-50">
           <div className="max-w-7xl mx-auto">
             <h2 className="text-4xl font-bold text-center text-purple-950 mb-16">
               Meet Our Visionaries
             </h2>
             {/* 2. CO-FOUNDERS SECTION */}
-            <div className="grid md:grid-cols-2 gap-12">
+            <div className="flex justify-center">
               {/* Er. Shilpa Miglani */}
-              <div className="flex flex-col md:flex-row gap-8 bg-white p-8 rounded-3xl shadow-sm border-b-4 border-rose-500 hover:shadow-md transition">
+              <div className="flex flex-col md:flex-row gap-8 bg-white p-8 rounded-3xl shadow-sm border-b-4 border-rose-500 hover:shadow-md transition max-w-2xl w-full">
                 <div className="w-40 h-40 relative rounded-2xl flex-shrink-0 overflow-hidden bg-gray-100">
                   <Image
                     src="/images/shilpa.png" // Ensure this exists in public/images/
@@ -129,32 +130,9 @@ export default function HomePage() {
                   </p>
                 </div>
               </div>
-
-              {/* Ms. Eshu Madaan */}
-              <div className="flex flex-col md:flex-row gap-8 bg-white p-8 rounded-3xl shadow-sm border-b-4 border-purple-900 hover:shadow-md transition">
-                <div className="w-40 h-40 relative rounded-2xl flex-shrink-0 overflow-hidden bg-gray-100">
-                  <Image
-                    src="/images/eshu.png" // Ensure this exists in public/images/
-                    alt="Ms. Eshu Madaan"
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-                <div>
-                  <h3 className="text-2xl font-bold text-purple-900">
-                    Ms. Eshu Madaan
-                  </h3>
-                  <p className="text-purple-600 font-medium mb-4">Co-founder</p>
-                  <p className="text-gray-600 italic leading-relaxed text-sm">
-                    Edupreneur & Founder of Skillsphere. Focused on scaling
-                    educational potential into professional success.
-                  </p>
-                </div>
-              </div>
             </div>
           </div>
         </section>
-
         {/* OPPORTUNITIES (Page 4 of Brochure) */}
         <section className="py-24 px-6">
           <div className="max-w-7xl mx-auto">
