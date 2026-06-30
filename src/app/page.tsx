@@ -101,11 +101,10 @@ export default function HomePage() {
         </section>
 
         {/* CO-FOUNDERS SECTION */}
-        {/* CO-FOUNDERS SECTION */}
         <section className="py-24 px-6 bg-purple-50">
           <div className="max-w-7xl mx-auto">
             <h2 className="text-4xl font-bold text-center text-purple-950 mb-16">
-              Meet Our Visionaries
+              Meet Our Visionary Leader 
             </h2>
             {/* 2. CO-FOUNDERS SECTION */}
             <div className="flex justify-center">
